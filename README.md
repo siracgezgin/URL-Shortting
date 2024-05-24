@@ -7,6 +7,59 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+# URL-Shortting Uygulaması
+[Kullanım Videosu](https://github.com/siracgezgin/url-shortting/blob/master/url-shortting-kullanimi.mp4)
+
+Bu Laravel uygulaması, kullanıcıların uzun URL'leri kısaltarak daha kısa bir formata dönüştürebilmelerini sağlayan basit bir URL kısaltıcı uygulamasıdır. Kullanıcılar kısaltılmış URL'leri paylaşabilir ve bu URL'leri kullanarak orijinal uzun URL'lere erişebilirler.
+
+### Uygulamanın Temel İşlevleri:
+
+1. **URL Kısaltma:** Kullanıcılar uygulamaya uzun bir URL girebilirler. Uygulama bu uzun URL'yi kısaltır ve kullanıcıya daha kısa bir versiyonunu sunar.
+
+2. **Kısaltılmış URL'lerin Yönlendirilmesi:** Kullanıcılar kısaltılmış bir URL'yi tarayıcılarına girerlerse, uygulama bu URL'yi orijinal uzun URL'ye yönlendirir.
+
+3. **Veri Doğrulaması:** Uygulama, kullanıcıların geçersiz URL'leri veya eksik girişleri göndermesini önlemek için girişlerini doğrular. Örneğin, kullanıcının girdiği URL'nin gerçek bir URL olup olmadığını kontrol eder.
+
+4. **URL Kısaltma Geçmişi:** Kullanıcılar daha önce kısaltılan URL'leri görebilir ve bu kısaltılmış URL'lere tekrar erişebilirler.
+
+5. **Güvenlik:** Kısaltılmış URL'ler rastgele oluşturulan karakter dizilerinden oluşur, bu da tahmin edilmesini zorlaştırır ve güvenlik açısından daha iyidir.
+
+6. **Kullanıcı Arayüzü:** Uygulama, kullanıcı dostu bir arayüze sahiptir. Kullanıcılar kolayca URL'lerini kısaltabilir, kısaltılmış URL'leri paylaşabilir ve geçmişlerini görebilirler.
+
+Bu tür bir uygulama, genellikle web geliştirme pratiğinde yaygın olarak kullanılan bir örnektir ve Laravel gibi bir çerçeve kullanarak bu tür bir projeyi oluşturmak oldukça eğiticidir.
+
+## Gereksinimler
+
+- PHP 7.4 veya daha yeni bir sürüm
+- Composer
+- Web sunucusu (Apache, Nginx vb.)
+- Bir veritabanı sunucusu (MySQL, PostgreSQL, SQLite vb.)
+
+## Kurulum
+
+1. Bu depoyu klonlayın veya ZIP dosyasını indirin.
+2. Projeyi bir klasöre çıkartın.
+3. Terminal veya komut istemcisini açın ve projenin kök dizinine gidin.
+4. `composer install` komutunu çalıştırarak gerekli PHP bağımlılıklarını yükleyin.
+5. `.env.example` dosyasını `.env` olarak kopyalayın ve kendi veritabanı ayarlarınızı yapın.
+6. `php artisan key:generate` komutunu çalıştırarak uygulamanın gizli anahtarını oluşturun.
+7. `php artisan migrate` komutunu çalıştırarak veritabanını oluşturun.
+8. `php artisan serve` komutunu çalıştırarak yerel sunucuyu başlatın.
+
+## Kullanım
+
+1. Tarayıcınızı açın ve uygulamayı çalıştırdığınız yerel sunucuya gidin (genellikle http://localhost:8000).
+2. Ana sayfada, uzun bir URL girin ve "Kısalt" düğmesine tıklayın.
+3. Orijinal URL'nizin kısaltılmış bir versiyonunu alacaksınız. Bu kısaltılmış URL'yi paylaşabilir veya kullanabilirsiniz.
+
+## Katkılar
+
+Katkılarınızı memnuniyetle karşılıyoruz! Uygulamayı geliştirmek veya hata düzeltmek için bir katkıda bulunmak isterseniz, lütfen bir pull talebi gönderin veya bir sorun açın.
+
+## Lisans
+
+Bu proje MIT Lisansı altında lisanslanmıştır. Daha fazla bilgi için [LICENSE](LICENSE) dosyasını inceleyebilirsiniz.
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
